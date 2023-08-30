@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap;
+}
+body{
+background-color: rgb(118, 113, 107);
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.naruto{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px 10px 60px;
+    border-bottom: 1px solid rgb(215, 203, 203);
+    flex-wrap: wrap;
+}
+form{
+   border-radius: 10px 30px;
+   width: 600px;
+   height: 45px;
+   display: flex;
+    margin: 200px auto;
+   justify-content: center;
+   border-color: white;
+}
+form input{
+   flex: 3;
+   border-radius: 30px;
+   background-color: rgb(236, 238, 238);
+   outline: transparent;
+   box-shadow: 10px 10px 10px rgb(163, 145, 145);
+   font-size: 20px;
+    border: none;
+    color: rgb(70, 74, 74);
+    font-family:serif;
+    flex-wrap: wrap;
+}
+form .se button{
+    
+   padding: 10px;
+   border-radius: 30px;
+   outline: none;
+    position: relative;
+    right: 45px;
+   color: #907575;
+    size: 8px;
+    
+   letter-spacing: 1px;
+   cursor: pointer;
+    font-size: 25px;
+    border: none;
+}
+
+.photo .naru{
+    width: 250px;
+    height: 250px;
+    padding: 50px 50px 50px;
+    background-color: rgb(223, 208, 181);
+
+}
+.photo .bc{
+    width: 250px;
+    height: 250px;
+    padding: 50px 50px 50px;
+    border-radius: 90px;
+    background-color: rgb(211, 198, 174);
+}
+.photo .aot{
+    width: 250px;
+    height: 250px;
+    padding: 50px 50px 50px;
+    border-radius: 90px;
+    background-color: rgb(216, 200, 171);
+    flex-wrap: ;
+}
+.photo .bl{
+    width: 250px;
+    height: 250px;
+    padding: 50px 50px 50px;
+    border-radius: 90px;
+    background-color: rgb(224, 205, 168);
+}
