@@ -8,6 +8,7 @@ body{
     
     background-image: url("https://wallpapercave.com/wp/wp8106839.jpg");
     background-repeat:no-repeat;
+    background-image: url("https://cdn2.unrealengine.com/what-is-discord-1920x1080-c3d90ca45f57.jpg");
 }
 .login{
     
@@ -36,7 +37,7 @@ form .name{
     border-radius: 10px;
     position: relative;
     background: transparent;
-    color: aliceblue;
+    color: rgb(60, 63, 66);
     outline: none;
     transition: 0.5s;
 }
