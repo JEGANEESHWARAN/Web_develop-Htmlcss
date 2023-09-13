@@ -84,7 +84,6 @@ form .name{
     background: transparent;
     transition: 0.5s;
     color: rgb(16, 24, 32);
-    
     outline: none;
 }
 .email input:valid,
@@ -103,7 +102,6 @@ form .name{
     background-color: rgb(89, 104, 104);
     border-color: none;
     letter-spacing: 2px;
-
 }
 .button button:hover{
     box-shadow: 0px 0px 20px blue;
