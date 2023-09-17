@@ -1,11 +1,4 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-}
-body{
-    
+body{    
     background-image: url("https://wallpapercave.com/wp/wp8106839.jpg");
     background-repeat:no-repeat;
     background-image: url("https://cdn2.unrealengine.com/what-is-discord-1920x1080-c3d90ca45f57.jpg");
