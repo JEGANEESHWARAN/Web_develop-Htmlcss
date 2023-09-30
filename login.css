@@ -1,14 +1,13 @@
 body{    
-    background-image: url("https://wallpapercave.com/wp/wp8106839.jpg");
     background-repeat:no-repeat;
-    background-image: url("https://cdn2.unrealengine.com/what-is-discord-1920x1080-c3d90ca45f57.jpg");
+    background-image: url("E:/photos/others/j.jpg");
 }
 .login{
     
     background: transparent;
-    padding: 10px 10px 10px ;
+    padding: 10px 50px 50px 50px;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 10px;
     border: 1px solid black ;
     width: 420px;
@@ -18,7 +17,7 @@ body{
 form .name{
     display: flex;
     font-size: 25px;
-    color: black;
+    color: white;
     padding: 20px;
     background:transparent;
     word-spacing: 30px;
@@ -26,17 +25,19 @@ form .name{
 }
 .name input{
     width: 370px;
-    height:30px;
+    height:40px;
+    font-size: 20px;
     border-radius: 10px;
     position: relative;
     background: transparent;
-    color: rgb(60, 63, 66);
+    color: white;
     outline: none;
     transition: 0.5s;
 }
 .name input:valid,
 .name input:focus{
-    border-color:rgb(94, 94, 158);
+    box-shadow: 0 0 20px wheat;
+    border-color: goldenrod;
     transform: translateY(-10px);
 }
 .pass{
@@ -48,16 +49,19 @@ form .name{
 }
 .pass input{
     width: 370px;
-    height:30px;
+    height:40px;
     position: relative;
     background: transparent;
     outline: none;
     transition: 0.5s;
+    font-size: 20px;
+    color: white;
     border-radius: 10px;
 }
 .pass input:valid,
 .pass input:focus{
-    border-color:rgb(85, 85, 143);
+    box-shadow: 0 0 20px wheat;
+    border-color: goldenrod;
     transform: translateY(-10px);
 }
 .email{
@@ -70,37 +74,48 @@ form .name{
 .email input{
     flex-grow: 1;
     width: 370px;
-    height:30px;
+    height:40px;
     border-radius: 10px;
+    font-size: 20px;
     position: relative;
     background: transparent;
     transition: 0.5s;
-    color: rgb(16, 24, 32);
+    color: white;
     outline: none;
 }
 .email input:valid,
 .email input:focus{
-    border-color:rgb(108, 108, 197);
+    box-shadow: 0 0 20px wheat;
+    border-color: goldenrod;
     transform: translateY(-10px);
 }
 .button button{
-    color: rgb(4, 4, 4);
+    color: black;
     cursor: pointer;
     width: 140px;
     height: 50px;
     position: relative;
-    top: 10px;
+    font-size: 20px;
+    top: 20px;
+    font-weight: 700;
+    border: 3px solid black;
     border-radius: 20px;
-    background-color: rgb(89, 104, 104);
-    border-color: none;
+    background-color: rgb(203, 158, 120);
     letter-spacing: 2px;
 }
 .button button:hover{
-    box-shadow: 0px 0px 20px blue;
-
+    box-shadow: 0px 0px 25px black;
 }
 .fp {
     display: flex;
+    font-size: 20px;
     justify-content:space-between;
 }
-
+.fp a{
+    display: flex;
+    position: relative;
+    left: 50px;
+    color: mediumspringgreen;
+    font-size: 20px;
+    font-weight: 500;
+}
