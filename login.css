@@ -2,6 +2,11 @@ body{
     background-repeat:no-repeat;
     background-image: url("E:/photos/others/j.jpg");
 }
+u h1{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
 .login{
     background: transparent;
     padding: 10px 50px 50px 50px;
@@ -20,7 +25,7 @@ form .name{
     padding: 20px;
     background:transparent;
     word-spacing: 30px;
-    flex-grow: 2;
+    flex-grow:;
 }
 .name input{
     width: 370px;
@@ -71,7 +76,7 @@ form .name{
     color: aliceblue;
 }
 .email input{
-    flex-grow: 1;
+
     width: 370px;
     height:40px;
     border-radius: 10px;
