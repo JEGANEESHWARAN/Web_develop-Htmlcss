@@ -3,7 +3,6 @@ body{
     background-image: url("E:/photos/others/j.jpg");
 }
 .login{
-    
     background: transparent;
     padding: 10px 50px 50px 50px;
     flex-direction: column;
