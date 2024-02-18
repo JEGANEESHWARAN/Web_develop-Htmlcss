@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fact()
+        {
+            var c=1;
+            var a = document.getElementById("input").value;
+            if(a == 0)
+            {
+                document.getElementById("c").value=a;
+            }
+            else if(a>0)
+            {
+            for(var i=1;i<=a;i++)
+            {
+                c=c*i;
+            }
+            document.getElementById("c").value= c;
+        }
+        else{
+            document.getElementById("c").value= "invalid";
+        }
+        }
+    </script>
+</head>
+<body bgcolor="yellow">
+    <center>
+        <p >Find a factorial to given number</p>
+        <form action="">
+            <input type="text" id="input">
+            <input type="button" value="fact" onclick="fact()">
+            <input id="c">
+        </form>
+    </center>
+</body>
+</html>

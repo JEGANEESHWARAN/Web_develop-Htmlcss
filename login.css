@@ -1,11 +1,12 @@
 body{    
     background-repeat:no-repeat;
-    background-image: url("E:/photos/others/j.jpg");
+    background-image: url("back.jpg");
 }
 u h1{
     font-size: 70px;
     display: flex;
     justify-content: center;
+    background-color:p;
 }
 .login{
     background: transparent;
@@ -15,17 +16,16 @@ u h1{
     margin: 10px;
     border: 1px solid black ;
     width: 420px;
-    height: 400px;
+    height: 500px;
     backdrop-filter: blur(20px);
 }
 form .name{
     display: flex;
     font-size: 25px;
-    color: white;
+    color: black;
     padding: 20px;
     background:transparent;
     word-spacing: 30px;
-    flex-grow:;
 }
 .name input{
     width: 370px;
@@ -34,14 +34,14 @@ form .name{
     border-radius: 10px;
     position: relative;
     background: transparent;
-    color: white;
+    color: black;
     outline: none;
     transition: 0.5s;
 }
 .name input:valid,
 .name input:focus{
-    box-shadow: 0 0 20px wheat;
-    border-color: goldenrod;
+    box-shadow: 0 0 20px violet;
+    border-color: violet;
     transform: translateY(-10px);
 }
 .pass{
@@ -59,13 +59,13 @@ form .name{
     outline: none;
     transition: 0.5s;
     font-size: 20px;
-    color: white;
+    color: black;
     border-radius: 10px;
 }
 .pass input:valid,
 .pass input:focus{
-    box-shadow: 0 0 20px wheat;
-    border-color: goldenrod;
+    box-shadow: 0 0 20px violet;
+    border-color: violet;
     transform: translateY(-10px);
 }
 .email{
@@ -76,7 +76,6 @@ form .name{
     color: aliceblue;
 }
 .email input{
-
     width: 370px;
     height:40px;
     border-radius: 10px;
@@ -84,13 +83,13 @@ form .name{
     position: relative;
     background: transparent;
     transition: 0.5s;
-    color: white;
+    color: black;
     outline: none;
 }
 .email input:valid,
 .email input:focus{
-    box-shadow: 0 0 20px wheat;
-    border-color: goldenrod;
+    box-shadow: 0 0 20px violet;
+    border-color: violet;
     transform: translateY(-10px);
 }
 .button button{
@@ -102,9 +101,9 @@ form .name{
     font-size: 20px;
     top: 20px;
     font-weight: 700;
-    border: 3px solid black;
+    border: 1px solid blueviolet;
     border-radius: 20px;
-    background-color: rgb(203, 158, 120);
+    background-color: rgba(137, 43, 226, 0.502);
     letter-spacing: 2px;
 }
 .button button:hover{
@@ -119,7 +118,7 @@ form .name{
     display: flex;
     position: relative;
     left: 50px;
-    color: mediumspringgreen;
-    font-size: 20px;
-    font-weight: 500;
+    color: olivedrab;
+    font-size: 25px;
+    font-weight: 900;
 }
