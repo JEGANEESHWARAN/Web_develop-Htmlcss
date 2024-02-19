@@ -39,7 +39,7 @@
         }
         .about-theni{
             margin-bottom: 20px;
-            border: 2px solid;
+            border-style: none none solid;
         }
         .about-theni #img1{
             width: 500px;
@@ -51,6 +51,7 @@
         }
         .about-theni p{
             font-size: 20px;
+            text-align: justify;
             margin: 30px 10px 50px 0px;
             line-height: 30px;
             margin-left: 30px;
@@ -62,7 +63,7 @@
             float: left;
         }
         .theni-places{
-            border:1px solid;
+            border-style: none none solid;
             padding-bottom: 80px;
         }
         .theni-places #img3{
@@ -77,10 +78,9 @@
             margin-bottom: 30px;
             margin-right: 50px;
             line-height: 30px;
+            margin-top: 60px;
+            text-align: justify;
             margin-left: 30px;
-        }
-        .th-mega{
-            border: 2px solid;
         }
         .th-mega #img4{
             float: right;
@@ -95,6 +95,7 @@
             font-size: 20px;
             margin: 60px 30px 20px 80px;
             line-height: 30px;
+            text-align: justify;
         }
         
         .tn-add{
@@ -154,17 +155,33 @@
     color: black;
     background-color: #ffffff;
 }
+@media all and (min-width: 1750px) {
+    .cont{ 
+        display: grid;
+    }
+    .th-mega{
+        padding-bottom: 100px;
+    }
+    .theni-places{
+        padding-bottom: 100px;
+    }
+}
+@media all and (min-width: 2900px){
+    .about-theni{
+        padding-bottom: 100px;
+    }
+}
     </style>
 </head>
 <body>
+    <div class="cont">
     <div class="head">
         <img src="logottn.png" alt="" >
         <h1>திண்டுக்கல் மாவட்டம் <br>
             DINDIGUL DISTRICT</h1>
             <div class="vannakam"><h3>
                 VANNKKAM DINDIGUL!!!!
-            </h3></div>
-            
+            </h3></div>  
     </div>
         <section>
             <div class="about-theni">
@@ -211,7 +228,7 @@
                     <p>www.tn@jegan.com</p>
                     <p>91+ 9159980033</p>
                 </div>
-             
+            </div>
             </div>
         </section>
         <section></section>

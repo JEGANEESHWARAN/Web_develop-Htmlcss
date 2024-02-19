@@ -14,6 +14,9 @@
         body{
             background-color: wheat;
         }
+        .cont{
+            text-align: justify;
+        }
         .head{
             display: flex;
             text-align: center;
@@ -39,11 +42,11 @@
         }
         .about-theni{
             margin-bottom: 20px;
-            border: 2px solid;
+            border-style: none none solid;
         }
         .about-theni #img1{
             width: 500px;
-            height: 700px;
+            height: 600px;
             border-radius: 10%;
             border:2px solid;
             float: left;
@@ -63,8 +66,9 @@
             float: left;
         }
         .theni-places{
-            border:1px solid;
+            border-style: none none solid;
             padding-bottom: 0px;
+            text-align: justify;
         }
         .theni-places #img3{
             float: left;
@@ -76,12 +80,9 @@
         .theni-places #p12{
             font-size: 20px;
             margin-bottom: 30px;
-            margin-right: 50px;
+            margin-right: 90px;
             line-height: 30px;
             margin-left: 30px;
-        }
-        .th-mega{
-            border: 2px solid;
         }
         .th-mega #img4{
             float: right;
@@ -155,9 +156,26 @@
     color: black;
     background-color: #ffffff;
 }
+@media all and (min-width: 1750px) {
+    .cont{ 
+        display: grid;
+    }
+    .th-mega{
+        padding-bottom: 100px;
+    }
+    .theni-places{
+        padding-bottom: 50px;
+    }
+}
+@media all and (min-width: 2100px){
+    .about-theni{
+        padding-bottom: 100px;
+    }
+}
     </style>
 </head>
 <body>
+    <div class="cont">
     <div class="head">
         <img src="logottn.png" alt="" >
         <h1>சென்னை மாவட்டம் <br>
@@ -211,7 +229,7 @@
                     <p>www.tn@jegan.com</p>
                     <p>91+ 9159980033</p>
                 </div>
-             
+            </div>
             </div>
         </section>
         <section></section>

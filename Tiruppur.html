@@ -39,7 +39,7 @@
         }
         .about-theni{
             margin-bottom: 20px;
-            border: 2px solid;
+            border-style: none none solid;
         }
         .about-theni #img1{
             width: 500px;
@@ -51,6 +51,7 @@
         }
         .about-theni p{
             font-size: 20px;
+            text-align: justify;
             margin: 30px 10px 50px 0px;
             line-height: 30px;
             margin-left: 30px;
@@ -62,25 +63,24 @@
             float: left;
         }
         .theni-places{
-            border:1px solid;
-            padding-bottom: 0px;
+            padding-bottom: 70px;
+            border-style: none none solid;
         }
         .theni-places #img3{
             float: left;
-            margin: 20px;
+            margin: 40px;
             width: 400px;
             border-radius: 30px;
             border: 2px solid;
         }
         .theni-places #p12{
             font-size: 20px;
+            padding-top: 30px;
+            text-align: justify;
             margin-bottom: 30px;
             margin-right: 50px;
             line-height: 30px;
             margin-left: 30px;
-        }
-        .th-mega{
-            border: 2px solid;
         }
         .th-mega #img4{
             float: right;
@@ -95,6 +95,7 @@
             font-size: 20px;
             margin: 60px 30px 20px 80px;
             line-height: 30px;
+            text-align: justify;
         }
         
         .tn-add{
@@ -154,14 +155,18 @@
     color: black;
     background-color: #ffffff;
 }
-@media all and (max-width: 100px) {
-    *{ 
-        width:100%
+@media all and (min-width: 1900px) {
+    .cont{ 
+        display: grid;
+    }
+    .about-theni{
+        padding-bottom: 60px;
     }
 }
     </style>
 </head>
 <body>
+    <div class="cont">
     <div class="head">
         <img src="logottn.png" alt="" >
         <h1>திருப்பூர் மாவட்டம் <br>
@@ -169,7 +174,6 @@
             <div class="vannakam"><h3>
                 VANNKKAM TIRUPPUR!!!!
             </h3></div>
-            
     </div>
         <section>
             <div class="about-theni">
@@ -185,7 +189,6 @@
                     The region came under the rule of the Vijayanagara Empire by the 15th century and later Palayakkarars, the chieftains of Madurai Nayaks ruled the region.[12] In the later part of the 18th century, the region came under the Kingdom of Mysore, following a series of wars with the Madurai Nayak Dynasty. After the defeat of Tipu Sultan in the Anglo-Mysore Wars, the British East India Company annexed the region into the Madras Presidency in 1799.</p>
             </div>
         </section>
-        <section>
             <div class="theni-places">
                 <img src="thi1.jpg" alt="" id="img3">
                 <p id="p12">Tirupur is a major textile center in the west of Tamil Nadu and the “Knit wear capital” of India. It is known for its famous banyan factory and functions successfully for more than three decades. The city provides employment opportunities to more than six lakh people through its textile industry. Predominantly Tirupur exports textiles to many countries. The city’s textiles industry gained its significance in quality and excellence of the textile after it started exporting to many places. The industries’ yearly turnover is 220 billion rupees and more than 120 billion rupees from exports.
@@ -197,7 +200,6 @@
                 <img src="Thirupparankundram_Town_View.jpeg" alt="" id="img4">
                 <p id="p4">The forest area in Theni district is about 33.70%. There are 27 forest areas in the district, constituting a total area of 795.81 km2 (307.26 sq mi). Of these, 19 areas fall under the Reserve Forest category with 255.44 km2 (98.63 sq mi) and 8 areas under Reserve Land category with 540.37 km2 (208.64 sq mi). Total area of forest under green cover classification was 806.86 km2 (311.53 sq mi). Dense forest and sparse forest are 292.81 km2 (113.05 sq mi) and 22.43 km2 (8.66 sq mi), respectively. There is no unclassed forest type in the district. About 44.65 km2 (17.24 sq mi) of artificial forest area are cultivated in the district. Wattle, softwood, fuel wood, cashew, neem, and tamarind are the main forest plantation species in the district.[6] The forest area in the district is 1,179.29 km2 (455.33 sq mi), which is 40.98% of the total geographical area of the district.[16] The Meghamalai Wildlife sanctuary, Srivilliputhur elephant reserve, and part of Kodaikanal Wildlife Sanctuary are situated in Theni district.</p>
             </div>
-        </section>
         <section>
             <div class="tn-foo">
                 <div class="tn-add">
@@ -222,6 +224,6 @@
              
             </div>
         </section>
-        <section></section>
+        </div>
 </body>
 </html>
