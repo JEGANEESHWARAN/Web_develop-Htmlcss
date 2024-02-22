@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT3</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        function pali(){
+            var a= document.getElementById("in").value;
+            var b=a.length-1;
+            for( var i=0;i<=a.length/2;i++)
+            {
+                if(a[i] != a[b])
+                {
+                    var c=1;
+                }
+                b--;
+            }
+            if(c==1)
+                 alert("not pali");
+            else
+                 alert("pali");
+        }
+        function prime(){
+                var a=parseInt(document.getElementById("in").value);
+                for(var i=2;i<a/2;i++)
+                {
+                    if(a%i==0)
+                    {
+                       var c=1;
+                       break;
+                    }
+                }   
+                if(c==1)
+                    alert("not prime");
+                else
+                    alert("prime");
+        }
+        function primerow(){
+                var a=parseInt(document.getElementById("in").value);
+            for(var j=1 ;j<=a;j++)
+            {
+                var c=0;
+                for(var i=2;i<j;i++)
+                {
+                    if(j%i==0)
+                    {
+                       c=1;
+                    }
+                }   
+                if(c==0)
+                {
+                     document.write(j + "<br>");
+                }
+            }
+        }
+        function smla(){
+            var a= new Array();
+            var n=parseInt(document.getElementById("in").value);
+            for(var i=0;i<n;i++)
+            {
+                a[i]=(parseInt(window.prompt("enter")));
+            }
+            for(i=0;i<n;i++)
+            {
+                for(var j=0;j<n-i-1;j++)
+                {
+                    if(a[j]>a[j+1])
+                    {
+                        var t=a[j];
+                        a[j]=a[j+1];
+                        a[j+1]=t;
+                    }
+                }
+            }
+            document.getElementById("out").value=a[0];
+            //document.getElementById("out1").value=a[n-1];
+        }
+        function fibo(){
+            var f=parseInt(document.getElementById("in").value);
+            var a=0;
+            var b=1;
+            var c=0;
+            for(var i=0;i<f;i++)
+            {
+                c=a+b;
+                b=a;
+                a=c;
+                document.getElementById("out").value=b;
+            }
+        }
+        function ti(){
+            var a= document.getElementById("in").value;
+            var j="";
+            for(var i=0;i<a.length-1;i++)
+            {
+                if (a[i]==" "){  
+                        j=j+a[i];
+                        j=j+a[i+1].toUpperCase();
+                }
+                else if(i==0){
+                    j=j+a[i].toUpperCase()+a[i+1];
+                }
+                else{
+                    j=j+a[i+1];
+                }   
+            }
+           document.getElementById("out").value=j;
+        }
+        function uniqe(){
+            var a= new Array();
+            var m= new Array();
+            var v=0;
+            var n=parseInt(document.getElementById("in").value);
+            for(var i=0;i<n;i++)
+            {
+                a[i]=parseInt(window.prompt("enter"));
+            }
+            for(i=0;i<n;i++)
+            {
+                for(var j=0;j<n-i-1;j++)
+                {
+                    if(a[j]>a[j+1])
+                    {
+                        var t=a[j];
+                        a[j]=a[j+1];
+                        a[j+1]=t;
+                    }
+                }
+            }
+            for(i=0;i<n;i++)
+            {
+                if(a[i] != a[i+1]){
+                    m[v++]=a[i];
+                }
+            }
+            document.getElementById("out").value=m;
+        }
+        function merge()
+        {
+            var a= new Array();
+            var b= new Array();
+            var c= new Array();
+            var v=0;
+            var n=parseInt(document.getElementById("in").value);
+            var m=parseInt(document.getElementById("in1").value);
+            for(var i=0;i<n;i++)
+            {
+                a[i]=parseInt(window.prompt("enter"));
+            }
+            for(var i=0;i<m;i++)
+            {
+                b[i]=parseInt(window.prompt("enter"));
+            }
+            sort(a,n);
+            sort(b,m);
+            function sort(a,n)
+            {
+            for(i=0;i<n;i++)
+            {
+                for(var j=0;j<n-i-1;j++)
+                {
+                    if(a[j]>a[j+1])
+                    {
+                        var t=a[j];
+                        a[j]=a[j+1];
+                        a[j+1]=t;
+                    }
+                }
+            }
+            }  
+            mer(a,n);
+            mer(b,m);
+         function mer(a,n){
+            for(i=0;i<n;i++)
+           {
+            c[v++]=a[i];
+           } 
+         }
+         var h=m+n;
+         sort(c,h)
+         document.getElementById("out").value=c;  
+        }
+        function flet(){
+            var n=parseInt(document.getElementById("in").value);
+            var a=new Array();
+            for(var i=0;i<n;i++)
+            {
+                a[i]=[];
+                var m=parseInt(window.prompt("enter the column"));
+                for(var j=0;j<m;j++)
+                {
+                    a[i].push(parseInt(window.prompt("enter the")));
+                }
+            }
+            for(var i=0;i<a.length;i++)
+            {
+                for(var j=0;j<a[i].length;j++)
+                {
+                    document.getElementById("out").value=a[i][j]+" ";
+                 }
+                // document.getElementById("out").value="<br>";
+        }
+        var v=a.flat();
+        document.getElementById("out").value=v;
+        }
+    </script>
+</head>
+<body>
+    <div class="program">
+        <div class="heading">
+            <h1>ASSIGNMENT III</h1>
+        </div>
+        <form>
+            <input type="text" id="in">
+            <input type="text" id="in1">
+            <input type="button" value="pali" onclick="flet()">
+            <input type="text" id="out">
+        </form>
+    </div>
+</body>
+</html>
