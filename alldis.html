@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href=https://www.cnet.com/a/img/resize/5607505c549e0d5d7f2b5d0a9bb40ce4581c3534/hub/2019/06/05/644162fd-5f99-4a9c-becf-37ebcf2d97ea/firefox-new-icon-2019-06.jpg?auto=webp&fit=crop&height=1200&width=1200 type="x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon"
+        href=https://www.cnet.com/a/img/resize/5607505c549e0d5d7f2b5d0a9bb40ce4581c3534/hub/2019/06/05/644162fd-5f99-4a9c-becf-37ebcf2d97ea/firefox-new-icon-2019-06.jpg?auto=webp&fit=crop&height=1200&width=1200
+        type="x-icon">
     <title>TAMILNADU||DISTRICTS</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        body{
+
+        body {
             background-color: rgb(179, 245, 227);
         }
-        .head{
+
+        .head {
             display: flex;
             text-align: center;
             background-color: white;
@@ -23,50 +30,58 @@
             margin-bottom: 40px;
             border-style: none none double;
         }
-        .head .vannakam{
+
+        .head .vannakam {
             position: absolute;
             top: 100px;
             font-family: Algerian;
             font-size: 30px;
             left: 200px;
         }
-        .head img{
+
+        .head img {
             width: 150px;
             padding-left: 20px;
             padding-right: 10px;
             border-radius: 50%;
-            
+
         }
-        .about-theni{
+
+        .about-theni {
             margin-bottom: 20px;
             border-style: none none solid;
         }
-        .about-theni #img1{
+
+        .about-theni #img1 {
             width: 500px;
             border-radius: 10%;
-            border:2px solid;
+            border: 2px solid;
             float: left;
             height: 650px;
             margin-right: 50px;
             margin-left: 90px;
         }
-        .about-theni p{
+
+        .about-theni p {
             font-size: 20px;
             text-align: justify;
             margin: 30px 10px 50px 0px;
             line-height: 30px;
             margin-left: 30px;
         }
-        .about-theni #img2{
+
+        .about-theni #img2 {
             width: 300px;
             border-radius: 10%;
             margin-right: 20px;
             float: left;
         }
-        .theni-places{
+
+        .theni-places {
             border-style: none none solid;
         }
-        .theni-places #img3{
+
+        .theni-places #img3 {
             float: left;
             margin: 20px 60px;
             width: 300px;
@@ -74,7 +89,8 @@
             border-radius: 30px;
             border: 2px solid;
         }
-        .theni-places #p12{
+
+        .theni-places #p12 {
             font-size: 20px;
             margin-bottom: 90px;
             margin-right: 50px;
@@ -83,10 +99,12 @@
             text-align: justify;
             margin-left: 30px;
         }
-        .th-mega{
+
+        .th-mega {
             padding: 10px;
         }
-        .th-mega #img4{
+
+        .th-mega #img4 {
             float: right;
             width: 350px;
             border-radius: 20px;
@@ -95,14 +113,15 @@
             margin-right: 30px;
             margin-left: 50px;
         }
-        .th-mega #p4{
+
+        .th-mega #p4 {
             font-size: 20px;
             margin: 60px 30px 20px 80px;
             line-height: 30px;
             text-align: justify;
         }
-        
-        .tn-add{
+
+        .tn-add {
             display: grid;
             align-items: center;
             justify-content: center;
@@ -112,9 +131,10 @@
             background-color: rgba(84, 77, 77, 0.911);
             color: white;
         }
-        .tn-web{
+
+        .tn-web {
             display: grid;
-           text-align: center;
+            text-align: center;
             justify-content: center;
             background-color: beige;
             padding: 20px;
@@ -122,95 +142,133 @@
             background-color: black;
             color: white;
         }
-        .tn-web #p12{
+
+        .tn-web #p12 {
             padding: 20px;
-        } 
-        .icons-col ul li{
-    display: grid;   
-    margin-bottom: 20px;
-    background-color: black;
-}
-.icons-col a{
-    text-decoration: none;
-}
-.icons-col ul a li{
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-    display: block;
-    transition: 0.03s
-}
-.icons-col ul a li:hover{
-    color: white;
-    text-decoration: underline;
-}
-.icons-col i{
-    display: inline-block;
-    background-color: rgb(253, 248, 248,0.2);
-    height: 40px;
-    width: 40px;
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    color: #ffffff;
-    border-radius: 50%;
-}
-.icons-col i:hover{
-    color: black;
-    background-color: #ffffff;
-}
-@media all and (min-width: 1750px) {
-    .cont{ 
-        display: grid;
-    }
-    .th-mega{
-        padding-bottom: 100px;
-    }
-}
-@media all and (min-width: 1850px){
-    .about-theni{
-        padding-bottom: 100px;
-    }
-}
+        }
+
+        .icons-col ul li {
+            display: grid;
+            margin-bottom: 20px;
+            background-color: black;
+        }
+
+        .icons-col a {
+            text-decoration: none;
+        }
+
+        .icons-col ul a li {
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: 0.03s
+        }
+
+        .icons-col ul a li:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .icons-col i {
+            display: inline-block;
+            background-color: rgb(253, 248, 248, 0.2);
+            height: 40px;
+            width: 40px;
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            color: #ffffff;
+            border-radius: 50%;
+        }
+
+        .icons-col i:hover {
+            color: black;
+            background-color: #ffffff;
+        }
+
+        @media all and (min-width: 500px) {
+            .about-theni #img1 {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        @media all and (min-width: 1850px) {
+            .about-theni {
+                padding-bottom: 100px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="cont">
-    <div class="head">
-        <img src="logottn.png" alt="" >
-        <h1>தமிழ்நாடு மாவட்டங்கள் <br>
-            TAMILNADU DISTRICTS</h1>
-            <div class="vannakam"><h3>
-                VANNKKAM TAMIZHA !!!!
-            </h3></div>
-    </div>
+        <div class="head">
+            <img src="logottn.png" alt="">
+            <h1>தமிழ்நாடு மாவட்டங்கள் <br>
+                TAMILNADU DISTRICTS</h1>
+            <div class="vannakam">
+                <h3>
+                    VANNKKAM TAMIZHA !!!!
+                </h3>
+            </div>
+        </div>
         <section>
             <div class="about-theni">
-                <img src="tt.png" alt="" id="img1">
-                <p>The state emblem was designed in 1949 by artist R. Krishna Rao who was a native of Madurai. Krishna Rao was honoured with awards and titles for his contribution to the state. A student of the Government College of Fine Arts and Crafts in Chennai, who went on to become the principal of the college later, Rao was approached to design the emblem in 1948 when he was a professor of applied arts in the college.
-                    It consists of the Lion Capital of Ashoka without the bell lotus foundation and flanked on either side by an Indian flag. Behind the capital, is the image of a Gopuram or Hindu temple tower based on the Srivalliputhur Temple. Around the rim of the seal runs an inscription in Tamil script, one at the top தமிழ் நாடு அரசு ("Tamil Nadu Arasu" which translates to "Government of Tamil Nadu") and the other at the bottom வாய்மையே வெல்லும் ("Vaymaiye Vellum" which translates to "Truth Alone Triumphs" also commonly known as "Satyameva Jayate" in Sanskrit). It is the only state emblem that has the Indian Flag and Hindu temple tower on its seal.</p>
+                <img src="tt.png" alt="" id="img1"><H1>HISTROY OF TAMILNADU</H1>
+                <p>The state emblem was designed in 1949 by artist R. Krishna Rao who was a native of Madurai. Krishna
+                    Rao was honoured with awards and titles for his contribution to the state. A student of the
+                    Government College of Fine Arts and Crafts in Chennai, who went on to become the principal of the
+                    college later, Rao was approached to design the emblem in 1948 when he was a professor of applied
+                    arts in the college.
+                    It consists of the Lion Capital of Ashoka without the bell lotus foundation and flanked on either
+                    side by an Indian flag. Behind the capital, is the image of a Gopuram or Hindu temple tower based on
+                    the Srivalliputhur Temple. Around the rim of the seal runs an inscription in Tamil script, one at
+                    the top தமிழ் நாடு அரசு ("Tamil Nadu Arasu" which translates to "Government of Tamil Nadu") and the
+                    other at the bottom வாய்மையே வெல்லும் ("Vaymaiye Vellum" which translates to "Truth Alone Triumphs"
+                    also commonly known as "Satyameva Jayate" in Sanskrit). It is the only state emblem that has the
+                    Indian Flag and Hindu temple tower on its seal.</p>
                 <p></p>
                 <img src="goat.jpg" alt="" id="img2">
-                <p>Nilgiri Varaiyaadu is an ungulate that is endemic to the Nilgiri Hills and the southern portion of the Western and Eastern Ghats in the states of Tamil Nadu. It is the only species in the genus Nilgiritragus and is closely related to the sheep of the genus Ovis.</p>
-                <p>The Nilgiri Tahr is facing various threats due to habitat loss, poaching, and climate change. The animal’s habitat is under threat due to deforestation and encroachment by human settlements. Poaching for their meat and horns is also a significant threat to the animal’s survival. The changing climate is also affecting the animal’s habitat and food sources, leading to a decline in their population.</p>
+                <H1>NILGIRI VARAIYAADU</H1>
+                <p>Nilgiri Varaiyaadu is an ungulate that is endemic to the Nilgiri Hills and the southern portion of
+                    the Western and Eastern Ghats in the states of Tamil Nadu. It is the only species in the genus
+                    Nilgiritragus and is closely related to the sheep of the genus Ovis.</p>
+                <p>The Nilgiri Tahr is facing various threats due to habitat loss, poaching, and climate change. The
+                    animal’s habitat is under threat due to deforestation and encroachment by human settlements.
+                    Poaching for their meat and horns is also a significant threat to the animal’s survival. The
+                    changing climate is also affecting the animal’s habitat and food sources, leading to a decline in
+                    their population.</p>
             </div>
         </section>
         <section>
             <div class="theni-places">
-                <img src="tree.jpg" alt="" id="img3">
+                <img src="tree.jpg" alt="" id="img3"><H1>PANNAI MARRAM</H1>
                 <p>
-                    <ul id="p12">
-                        <li>Scientific name – Borassus flabellifer</li>
-                        <li>Common names – Doub palm, tala or tala palm, Palmyra palm, wine palm or ice apple, toddy palm</li>
-                        <li> Native –  South Asia, Southeast Asia, Socotra, and parts of China</li>
-                        <li>Native names – Katpaha Tharu (celestial tree), Panaiveriyamman</li>
-                        <li>Symbolise – Fertility according to the Tamil deity</li>
-                    </ul> </p>
+                <ul id="p12">
+                    <li>Scientific name – Borassus flabellifer</li>
+                    <li>Common names – Doub palm, tala or tala palm, Palmyra palm, wine palm or ice apple, toddy palm
+                    </li>
+                    <li> Native – South Asia, Southeast Asia, Socotra, and parts of China</li>
+                    <li>Native names – Katpaha Tharu (celestial tree), Panaiveriyamman</li>
+                    <li>Symbolise – Fertility according to the Tamil deity</li>
+                </ul>
+                </p>
             </div>
             <div class="th-mega">
-                <p></p>
-                <img src="flower.jpeg" alt="" id="img4">
-                <p id="p4">The forest area in Theni district is about 33.70%. There are 27 forest areas in the district, constituting a total area of 795.81 km2 (307.26 sq mi). Of these, 19 areas fall under the Reserve Forest category with 255.44 km2 (98.63 sq mi) and 8 areas under Reserve Land category with 540.37 km2 (208.64 sq mi). Total area of forest under green cover classification was 806.86 km2 (311.53 sq mi). Dense forest and sparse forest are 292.81 km2 (113.05 sq mi) and 22.43 km2 (8.66 sq mi), respectively. There is no unclassed forest type in the district. About 44.65 km2 (17.24 sq mi) of artificial forest area are cultivated in the district. Wattle, softwood, fuel wood, cashew, neem, and tamarind are the main forest plantation species in the district.[6] The forest area in the district is 1,179.29 km2 (455.33 sq mi), which is 40.98% of the total geographical area of the district.[16] The Meghamalai Wildlife sanctuary, Srivilliputhur elephant reserve, and part of Kodaikanal Wildlife Sanctuary are situated in Theni district.</p>
+                <img src="flower.jpeg" alt="" id="img4"><H1>FLOWER OF TAMILNADU</H1>
+                <p id="p4">The forest area in Theni district is about 33.70%. There are 27 forest areas in the district,
+                    constituting a total area of 795.81 km2 (307.26 sq mi). Of these, 19 areas fall under the Reserve
+                    Forest category with 255.44 km2 (98.63 sq mi) and 8 areas under Reserve Land category with 540.37
+                    km2 (208.64 sq mi). Total area of forest under green cover classification was 806.86 km2 (311.53 sq
+                    mi). Dense forest and sparse forest are 292.81 km2 (113.05 sq mi) and 22.43 km2 (8.66 sq mi),
+                    respectively. There is no unclassed forest type in the district. About 44.65 km2 (17.24 sq mi) of
+                    artificial forest area are cultivated in the district. Wattle, softwood, fuel wood, cashew, neem,
+                    and tamarind are the main forest plantation species in the district.[6] The forest area in the
+                    district is 1,179.29 km2 (455.33 sq mi), which is 40.98% of the total geographical area of the
+                    district.[16] The Meghamalai Wildlife sanctuary, Srivilliputhur elephant reserve, and part of
+                    Kodaikanal Wildlife Sanctuary are situated in Theni district.</p>
             </div>
         </section>
         <section>
@@ -220,21 +278,22 @@
                 </div>
                 <div class="tn-web">
                     <p>
-                    © NIC Tamil Nadu , Developed and hosted by National Informatics Centre, </p>
+                        © NIC Tamil Nadu , Developed and hosted by National Informatics Centre, </p>
                     <p>Ministry of Electronics & Information Technology, Government of India
                     </p>
                     <p id="p12">Last Updated: Feb 16, 2024</p>
                     <div class="icons-col">
-                        <a href="#" ><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" ><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" ><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" ><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#" ><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                     <p>www.tn@jegan.com</p>
                     <p>91+ 9159980033</p>
                 </div>
             </div>
-            </div>
+    </div>
 </body>
+
 </html>
