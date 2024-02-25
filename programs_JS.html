@@ -1,227 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASSIGNMENT3</title>
     <style>
-        body{
-            background-color: aqua;
+        body {
+            background-color: blueviolet;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .contain-1 {
+            border: 3px solid;
+            margin: 0px 350px 20px 350px;
+            background-color: white;
+            border-radius: 10px;
+
+        }
+
+        .contain-1 p {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .contain-1 .input {
+            display: grid;
+            justify-content: center;
+            margin-bottom: 3%;
+        }
+
+        .contain-1 .input label {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        .contain-1 .input input {
+
+            height: 35px;
+            border-radius: 10px;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        .contain-1 .output {
+            display: grid;
+            margin-bottom: 3%;
+            justify-content: center;
+        }
+
+        .contain-1 .output label {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        .contain-1 .output input {
+            width: 250px;
+            height: 35px;
+            border-radius: 10px;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        .contain-1 .click {
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .contain-1 .click input {
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            color: blueviolet;
+            font-weight: bolder;
+        }
+
+        @media screen and (max-width:1200px) {
+            .contain-1 {
+                margin: 20px 35px 0px 35px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .contain-1 {
+                display: inline-block;
+                padding: 4px 100px 0px 10px;
+            }
+        }
+
+        @media screen and (min-width:1800px) {
+            .contain-1 {
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+                width: 1200px;
+
+            }
         }
     </style>
     <script>
-        function pali(){
-            var a= document.getElementById("in").value;
-            var b=a.length-1;
-            for( var i=0;i<=a.length/2;i++)
-            {
-                if(a[i] != a[b])
-                {
-                    var c=1;
+        function palinidrome() {
+            var a = document.getElementById("in").value;
+            var b = a.length - 1;
+            for (var i = 0; i <= a.length / 2; i++) {
+                if (a[i] != a[b]) {
+                    var c = 1;
                 }
+                else if (a[i] == null)
+                    c = 3;
+                else if (a[i] == " ")
+                    c = 2;
                 b--;
             }
-            if(c==1)
-                 alert("not pali");
+            if (c == 1)
+                document.getElementById("out").value = "Not palindrome";
+            else if (c == 2 || c == 3)
+                document.getElementById("out").value = "pls enter the value!!!";
             else
-                 alert("pali");
+                document.getElementById("out").value = "palindrome";
         }
-        function prime(){
-                var a=parseInt(document.getElementById("in").value);
-                for(var i=2;i<a/2;i++)
-                {
-                    if(a%i==0)
-                    {
-                       var c=1;
-                       break;
+        function prime() {
+            var a = parseInt(document.getElementById("in1").value);
+            if (a >= 0) {
+                if (a == 0 || a == 1)
+                    document.getElementById("out").value = "Not prime";
+                else {
+                    for (var i = 2; i < a / 2; i++) {
+                        if (a % i == 0) {
+                            var c = 1;
+                            break;
+                        }
                     }
-                }   
-                if(c==1)
-                    alert("not prime");
-                else
-                    alert("prime");
+                    if (c == 1)
+                        document.getElementById("out1").value = "Not prime";
+                    else
+                        document.getElementById("out1").value = "prime";
+                }
+            }
+            else
+                document.getElementById("out1").value = "Invalid";
         }
-        function primerow(){
-                var a=parseInt(document.getElementById("in").value);
-            for(var j=1 ;j<=a;j++)
-            {
-                var c=0;
-                for(var i=2;i<j;i++)
-                {
-                    if(j%i==0)
-                    {
-                       c=1;
+        function primeOnetoN() {
+            var s = "";
+            var a = parseInt(document.getElementById("in2").value);
+            if (a >= 0) {
+                if (a == 0 || a == 1)
+                    document.getElementById("out2").value = "Not prime";
+                else {
+                    for (var j = 2; j <= a; j++) {
+                        var c = 0;
+                        for (var i = 2; i < j / 2; i++) {
+                            if (j % i == 0) {
+                                c = 1;
+                            }
+                        }
+                        if (c == 0) {
+                            s = s + j + " ";
+                        }
                     }
-                }   
-                if(c==0)
-                {
-                     document.write(j + "<br>");
+                    document.getElementById("out2").value = s;
                 }
             }
-        }
-        function smla(){
-            var a= new Array();
-            var n=parseInt(document.getElementById("in").value);
-            for(var i=0;i<n;i++)
-            {
-                a[i]=(parseInt(window.prompt("enter")));
-            }
-            for(i=0;i<n;i++)
-            {
-                for(var j=0;j<n-i-1;j++)
-                {
-                    if(a[j]>a[j+1])
-                    {
-                        var t=a[j];
-                        a[j]=a[j+1];
-                        a[j+1]=t;
-                    }
-                }
-            }
-            document.getElementById("out").value=a[0];
-            //document.getElementById("out1").value=a[n-1];
-        }
-        function fibo(){
-            var f=parseInt(document.getElementById("in").value);
-            var a=0;
-            var b=1;
-            var c=0;
-            for(var i=0;i<f;i++)
-            {
-                c=a+b;
-                b=a;
-                a=c;
-                document.getElementById("out").value=b;
+            else {
+                document.getElementById("out2").value = "Invalid";
             }
         }
-        function ti(){
-            var a= document.getElementById("in").value;
-            var j="";
-            for(var i=0;i<a.length-1;i++)
-            {
-                if (a[i]==" "){  
-                        j=j+a[i];
-                        j=j+a[i+1].toUpperCase();
-                }
-                else if(i==0){
-                    j=j+a[i].toUpperCase()+a[i+1];
-                }
-                else{
-                    j=j+a[i+1];
-                }   
+        function smallerAndLarge() {
+            var a = new Array();
+            var n = parseInt(document.getElementById("in3").value);
+            for (var i = 0; i < n; i++) {
+                a[i] = (parseInt(window.prompt("enter")));
             }
-           document.getElementById("out").value=j;
-        }
-        function uniqe(){
-            var a= new Array();
-            var m= new Array();
-            var v=0;
-            var n=parseInt(document.getElementById("in").value);
-            for(var i=0;i<n;i++)
-            {
-                a[i]=parseInt(window.prompt("enter"));
-            }
-            for(i=0;i<n;i++)
-            {
-                for(var j=0;j<n-i-1;j++)
-                {
-                    if(a[j]>a[j+1])
-                    {
-                        var t=a[j];
-                        a[j]=a[j+1];
-                        a[j+1]=t;
+            for (i = 0; i < n; i++) {
+                for (var j = 0; j < n - i - 1; j++) {
+                    if (a[j] > a[j + 1]) {
+                        var t = a[j];
+                        a[j] = a[j + 1];
+                        a[j + 1] = t;
                     }
                 }
             }
-            for(i=0;i<n;i++)
-            {
-                if(a[i] != a[i+1]){
-                    m[v++]=a[i];
+            document.getElementById("out3").value = a[0];
+            document.getElementById("out4").value = a[n - 1];
+        }
+        function fibonocci() {
+            var f = parseInt(document.getElementById("in5").value);
+            var s = "";
+            var a = 0;
+            var b = 1;
+            var c = 0;
+            for (var i = 0; i < f; i++) {
+                c = a + b;
+                b = a;
+                a = c;
+                s = s + b + " ";
+            }
+            document.getElementById("out5").value = s;
+        }
+        function titlecase() {
+            var a = document.getElementById("in7").value;
+            var j = "";
+            for (var i = 0; i < a.length - 1; i++) {
+                if (a[i] == " ") {
+                    j = j + a[i];
+                    j = j + a[i + 1].toUpperCase();
+                }
+                else if (i == 0) {
+                    j = j + a[i].toUpperCase() + a[i + 1];
+                }
+                else {
+                    j = j + a[i + 1];
                 }
             }
-            document.getElementById("out").value=m;
+            document.getElementById("out7").value = j;
         }
-        function merge()
-        {
-            var a= new Array();
-            var b= new Array();
-            var c= new Array();
-            var v=0;
-            var n=parseInt(document.getElementById("in").value);
-            var m=parseInt(document.getElementById("in1").value);
-            for(var i=0;i<n;i++)
-            {
-                a[i]=parseInt(window.prompt("enter"));
+        function uniqe() {
+            var a = new Array();
+            var m = new Array();
+            var v = 0;
+            var s = "";
+            var n = parseInt(document.getElementById("in8").value);
+            for (var i = 0; i < n; i++) {
+                a[i] = parseInt(window.prompt("enter"));
             }
-            for(var i=0;i<m;i++)
-            {
-                b[i]=parseInt(window.prompt("enter"));
-            }
-            sort(a,n);
-            sort(b,m);
-            function sort(a,n)
-            {
-            for(i=0;i<n;i++)
-            {
-                for(var j=0;j<n-i-1;j++)
-                {
-                    if(a[j]>a[j+1])
-                    {
-                        var t=a[j];
-                        a[j]=a[j+1];
-                        a[j+1]=t;
+            for (i = 0; i < n; i++) {
+                for (var j = 0; j < n - i - 1; j++) {
+                    if (a[j] > a[j + 1]) {
+                        var t = a[j];
+                        a[j] = a[j + 1];
+                        a[j + 1] = t;
                     }
                 }
             }
-            }  
-            mer(a,n);
-            mer(b,m);
-         function mer(a,n){
-            for(i=0;i<n;i++)
-           {
-            c[v++]=a[i];
-           } 
-         }
-         var h=m+n;
-         sort(c,h)
-         document.getElementById("out").value=c;  
-        }
-        function flet(){
-            var n=parseInt(document.getElementById("in").value);
-            var a=new Array();
-            for(var i=0;i<n;i++)
-            {
-                a[i]=[];
-                var m=parseInt(window.prompt("enter the column"));
-                for(var j=0;j<m;j++)
-                {
-                    a[i].push(parseInt(window.prompt("enter the")));
+            for (i = 0; i < n; i++) {
+                if (a[i] != a[i + 1]) {
+                    m[v++] = a[i];
                 }
             }
-            for(var i=0;i<a.length;i++)
-            {
-                for(var j=0;j<a[i].length;j++)
-                {
-                    document.getElementById("out").value=a[i][j]+" ";
-                 }
-                // document.getElementById("out").value="<br>";
+            document.getElementById("out8").value = m;
         }
-        var v=a.flat();
-        document.getElementById("out").value=v;
+        function merge() {
+            var a = new Array();
+            var b = new Array();
+            var c = new Array();
+            var v = 0;
+            var n = parseInt(document.getElementById("in9").value);
+            var m = parseInt(document.getElementById("in10").value);
+            for (var i = 0; i < n; i++) {
+                a[i] = parseInt(window.prompt("enter the 1st arrar element"));
+            }
+            for (var i = 0; i < m; i++) {
+                b[i] = parseInt(window.prompt("enter the 2st arrar element"));
+            }
+            sort(a, n);
+            sort(b, m);
+            function sort(a, n) {
+                for (i = 0; i < n; i++) {
+                    for (var j = 0; j < n - i - 1; j++) {
+                        if (a[j] > a[j + 1]) {
+                            var t = a[j];
+                            a[j] = a[j + 1];
+                            a[j + 1] = t;
+                        }
+                    }
+                }
+            }
+            mer(a, n);
+            mer(b, m);
+            function mer(a, n) {
+                for (i = 0; i < n; i++) {
+                    c[v++] = a[i];
+                }
+            }
+            var h = m + n;
+            sort(c, h)
+            document.getElementById("out9").value = c;
+        }
+        function flet() {
+            var n = document.getElementById("in11").value;
+            var array = new Array();
+            var c = n.flat(Infinity);
+            document.getElementById("out11").value = c;
+            // for (var i = 0; i < n; i++) {
+            //     a[i] = [];
+            //     var m = parseInt(window.prompt("enter the column"));
+            //     for (var j = 0; j < m; j++) {
+            //         a[i].push(parseInt(window.prompt("enter the")));
+            //     }
+            // }
+            // for (var i = 0; i < a.length; i++) {
+            //     for (var j = 0; j < a[i].length; j++) {
+            //         document.getElementById("out").value = a[i][j] + " ";
+            //     }
+            // }
+            // var v = a.flat();
+            // document.getElementById("out").value = v;
         }
     </script>
 </head>
+
 <body>
-    <div class="program">
-        <div class="heading">
-            <h1>ASSIGNMENT III</h1>
-        </div>
+
+    <div class="heading">
+        <h1>ASSIGNMENT III</h1>
+    </div>
+    <div class="contain-1">
+        <p>Palindrome or Not</p>
         <form>
-            <input type="text" id="in">
-            <input type="text" id="in1">
-            <input type="button" value="pali" onclick="flet()">
-            <input type="text" id="out">
+            <div class="input">
+                <label for=""> Enter the Input:</label>
+                <input type="text" id="in" placeholder="String">
+            </div>
+            <div class="output">
+                <label for="">Output ans:</label>
+                <input type="text" id="out" placeholder="result">
+            </div>
+            <div class="click">
+                <input type="button" value="Click It " onclick="palinidrome()">
+            </div>
+        </form>
+    </div>
+    <div class="contain-1">
+        <p>Prime or Not</p>
+        <form>
+            <div class="input">
+                <label for=""> Enter the Input:</label>
+                <input type="text" id="in1" placeholder="Number">
+            </div>
+            <div class="output">
+                <label for="">Output ans:</label>
+                <input type="text" id="out1" placeholder="result">
+            </div>
+            <div class="click">
+                <input type="button" value="Click It " onclick="prime()">
+            </div>
+        </form>
+    </div>
+    <div class="contain-1">
+        <p>Prime One to N</p>
+        <form>
+            <div class="input">
+                <label for=""> Enter the Input:</label>
+                <input type="text" id="in2" placeholder="Number">
+            </div>
+            <div class="output">
+                <label for="">Output ans:</label>
+                <input type="text" id="out2" placeholder="result">
+            </div>
+            <div class="click">
+                <input type="button" value="Click It " onclick="primeOnetoN()">
+            </div>
+        </form>
+    </div>
+    <div class="contain-1">
+        <p>Small & Large Number</p>
+        <form>
+            <div class="input">
+                <label for=""> Enter the Input:</label>
+                <input type="text" id="in3" placeholder="enter a size of array">
+            </div>
+            <div class="output">
+                <label for="">Output ans:</label>
+                <input type="text" id="out3" placeholder="smallest number in array">
+                <input type="text" id="out4" placeholder="largest number in array">
+            </div>
+            <div class="click">
+                <input type="button" value="Click It " onclick="smallerAndLarge()">
+            </div>
+        </form>
+    </div>
+    <div class="contain-1">
+        <p>Fibonocci Series</p>
+        <form>
+            <div class="input">
+                <label for=""> Enter the Input:</label>
+                <input type="text" id="in5" placeholder="Number">
+            </div>
+            <div class="output">
+                <label for="">Output ans:</label>
+                <input type="text" id="out5" placeholder="result">
+            </div>
+            <div class="click">
+                <input type="button" value="Click It " onclick="fibonocci()">
+            </div>
+        </form>
+    </div>
+    <div class="contain-1">
+        <p>Title Case</p>
+        <form>
+            <div class="input">
+                <label for=""> Enter the Input:</label>
+                <input type="text" id="in7" placeholder="String">
+            </div>
+            <div class="output">
+                <label for="">Output ans:</label>
+                <input type="text" id="out7" placeholder="result">
+            </div>
+            <div class="click">
+                <input type="button" value="Click It " onclick="titlecase()">
+            </div>
+        </form>
+    </div>
+    <div class="contain-1">
+        <p>Unique Number</p>
+        <form>
+            <div class="input">
+                <label for=""> Enter the Input:</label>
+                <input type="text" id="in8" placeholder="Size of an Array">
+            </div>
+            <div class="output">
+                <label for="">Output ans:</label>
+                <input type="text" id="out8" placeholder="without duplicate no:">
+            </div>
+            <div class="click">
+                <input type="button" value="Click It " onclick="uniqe()">
+            </div>
+        </form>
+    </div>
+    <div class="contain-1">
+        <p>Merge Sort</p>
+        <form>
+            <div class="input">
+                <label for=""> Enter the Input:</label>
+                <input type="text" id="in9" placeholder="1st array size">
+
+                <input type="text" id="in10" placeholder="2nd array Size">
+            </div>
+            <div class="output">
+                <label for="">Output ans:</label>
+                <input type="text" id="out9" placeholder="Result">
+            </div>
+            <div class="click">
+                <input type="button" value="Click It " onclick="merge()">
+            </div>
+        </form>
+    </div>
+    <div class="contain-1">
+        <p>Flatten Array</p>
+        <form>
+            <div class="input">
+                <label for=""> Enter the Input:</label>
+                <input type="text" id="in11" placeholder="Multi dimension Array">
+            </div>
+            <div class="output">
+                <label for="">Output ans:</label>
+                <input type="text" id="out11" placeholder="flatten array">
+            </div>
+            <div class="click">
+                <input type="button" value="Click It " onclick="flet()">
+            </div>
         </form>
     </div>
 </body>
+
 </html>
