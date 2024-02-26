@@ -301,22 +301,20 @@
         function flet() {
             var n = document.getElementById("in11").value;
             var array = new Array();
-            var c = n.flat(Infinity);
-            document.getElementById("out11").value = c;
-            // for (var i = 0; i < n; i++) {
-            //     a[i] = [];
-            //     var m = parseInt(window.prompt("enter the column"));
-            //     for (var j = 0; j < m; j++) {
-            //         a[i].push(parseInt(window.prompt("enter the")));
-            //     }
-            // }
-            // for (var i = 0; i < a.length; i++) {
-            //     for (var j = 0; j < a[i].length; j++) {
-            //         document.getElementById("out").value = a[i][j] + " ";
-            //     }
-            // }
-            // var v = a.flat();
-            // document.getElementById("out").value = v;
+             for (var i = 0; i < n; i++) {
+                 a[i] = [];
+                 var m = parseInt(window.prompt("enter the column"));
+                 for (var j = 0; j < m; j++) {
+                     a[i].push(parseInt(window.prompt("enter the element")));
+                 }
+             }
+             for (var i = 0; i < a.length; i++) {
+                 for (var j = 0; j < a[i].length; j++) {
+                     document.getElementById("out").value = a[i][j] + " ";
+                 }
+             }
+             var v = a.flat();
+             document.getElementById("out").value = v;
         }
     </script>
 </head>
