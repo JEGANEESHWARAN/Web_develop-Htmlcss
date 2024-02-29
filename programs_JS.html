@@ -222,16 +222,17 @@
         function titlecase() {
             var a = document.getElementById("in7").value;
             var j = "";
-            for (var i = 0; i < a.length - 1; i++) {
+            var f=a.toLowerCase();
+            for (var i = 0; i < f.length - 1; i++) {
                 if (a[i] == " ") {
-                    j = j + a[i];
-                    j = j + a[i + 1].toUpperCase();
+                    j = j + f[i];
+                    j = j + f[i + 1].toUpperCase();
                 }
                 else if (i == 0) {
-                    j = j + a[i].toUpperCase() + a[i + 1];
+                    j = j + f[i].toUpperCase() + f[i + 1];
                 }
                 else {
-                    j = j + a[i + 1];
+                    j = j + f[i + 1];
                 }
             }
             document.getElementById("out7").value = j;
@@ -300,7 +301,7 @@
         }
         function flet() {
             var n = document.getElementById("in11").value;
-            var array = new Array();
+            var a = new Array();
              for (var i = 0; i < n; i++) {
                  a[i] = [];
                  var m = parseInt(window.prompt("enter the column"));
@@ -310,11 +311,11 @@
              }
              for (var i = 0; i < a.length; i++) {
                  for (var j = 0; j < a[i].length; j++) {
-                     document.getElementById("out").value = a[i][j] + " ";
+                     document.getElementById("out11").value = a[i][j] + " ";
                  }
              }
              var v = a.flat();
-             document.getElementById("out").value = v;
+             document.getElementById("out11").value = v;
         }
     </script>
 </head>
