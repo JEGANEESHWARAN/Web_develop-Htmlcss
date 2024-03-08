@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>   
+<head>
     <link rel="stylesheet" href="login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login-anime</title>
-    <link rel="icon" href="https://uploads.turbologo.com/uploads/design/hq_preview_image/5468529/draw_svg20220806-705-6wyos3.svg.png" type="x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon"href="https://www.cnet.com/a/img/resize/5607505c549e0d5d7f2b5d0a9bb40ce4581c3534/hub/2019/06/05/644162fd-5f99-4a9c-becf-37ebcf2d97ea/firefox-new-icon-2019-06.jpg?auto=webp&fit=crop&height=1200&width=1200" type="x-icon">
+        <script>
+            function reg(){
+                var v=document.getElementById("i1").value;
+                var reg1=/^[a-zA-Z]?[.]?[ ]?[a-zA-Z]?[.]?[ ]?[a-zA-Z]{2,25}[.]?[ ]?[a-zA-Z]?[.]?[ ]?[a-zA-Z]?$/i;
+                var a=document.getElementById("i2").value;
+                var reg2=/^[a-z0-9_]+@gmail.[a-z]{2,3}$/i;
+                var b=document.getElementById("i3").value;
+                var reg3=/^(?=^.{8,16}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
+                if(v.match(reg1) && a.match(reg2) && b.match(reg3))
+                {
+                    alert("Login is done");
+                    window.location.replace("PhotoRotate.html");
+                }
+                else{
+                    alert("pls! enter the valid input");
+                }
+            }
+        </script>
 </head>
 <body>
     <u><h1>login</h1></u>
     <center>
         <form>
-       <div class="login">
-        <div class="name">
-        <input type="text" placeholder="enter your name" required>
-        </div>
-        <br>
-        <div class="email">
-            <input type="email" required placeholder="abc@gmail.com">
-            <br>
+            <div class="login">
+                <div class="name">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <input type="text" placeholder="enter your name" required id="i1" maxlength="40">
+                </div>
+                <br>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" required placeholder="abc@gmail.com" id="i2">
+                    <br>
+                </div>
+                <br>
+                <div class="pass">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" required placeholder="enter the password" maxlength="16" id="i3">
+                </div>
+                <div class="fp">
+                    <span style="color: mediumblue; font-weight: bolder;"> <input type="checkbox" style="color: aliceblue;">remember me</span>
+                    <a href="#" style="text-decoration:none;"> @forgot password</a>
+                    <br>
+                </div>
+                <div class="button">
+                    <button onclick="reg()">LOGIN</button>
+                </div>
+                <br>
+                <p style="color: rgb(0, 0, 0); font-size: 20px"> If you want to change your account?</p>
+                <p><a href="#" style="text-decoration: none;color: rgb(54, 158, 46);font-size: 25px; font-weight: 500;">Sign Up</a></p>
             </div>
-            <br>
-        <div class="pass">
-        <input type="password" required placeholder="enter the password" maxlength="10">
-        </div>
-        <div class="fp">
-            <span style="color: mediumblue; font-weight: bolder;"> <input type="checkbox" style="color: aliceblue;">
-        remember me</span>
-        <a href="#"style="text-decoration:none;"> @forgot password</a>
-        <br>
-        </div>
-        <div class="button">
-            <button>SUBMIT</button>
-           </div>
-           <br>
-         <p style="color: white; font-size: 20px"> If you want to change your account?</p> 
-           <p><a href="#" style="text-decoration: none;color: greenyellow;font-size: 20px; font-weight: 500;">current account</a></p>
-       </div>
-        </form>  
+        </form>
     </center>
-    <h1></h1>
 </body>
 </html>

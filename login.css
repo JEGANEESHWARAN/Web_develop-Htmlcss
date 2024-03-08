@@ -1,18 +1,17 @@
 body {
     background-repeat: no-repeat;
     background-image: url("back.jpg");
+    background-size:100% 200%;
+    background-color: aqua;
 }
-
 u h1 {
     font-size: 70px;
     display: flex;
     justify-content: center;
-    background-color: p;
 }
-
 .login {
     background: transparent;
-    padding: 10px 50px 50px 50px;
+    padding: 10px 50px 10px 50px;
     flex-direction: column;
     border-radius: 20px;
     margin: 10px;
@@ -21,7 +20,11 @@ u h1 {
     height: 500px;
     backdrop-filter: blur(20px);
 }
-
+.login i{
+    width: 40px;
+    position: relative;
+    top: 15px;
+}
 form .name {
     display: flex;
     font-size: 25px;
@@ -30,19 +33,20 @@ form .name {
     background: transparent;
     word-spacing: 30px;
 }
-
+.name p i{
+position: relative;
+   bottom: 40px;
+}
 .name input {
     width: 370px;
     height: 40px;
     font-size: 20px;
     border-radius: 10px;
-    position: relative;
     background: transparent;
     color: black;
     outline: none;
     transition: 0.5s;
 }
-
 .name input:valid,
 .name input:focus {
     box-shadow: 0 0 20px violet;
@@ -51,8 +55,7 @@ form .name {
 }
 
 .pass {
-    padding: 0px;
-    color: aliceblue;
+    display: flex;
     background: transparent;
     word-spacing: 150px;
     padding: 20px;
@@ -69,22 +72,19 @@ form .name {
     color: black;
     border-radius: 10px;
 }
-
 .pass input:valid,
 .pass input:focus {
     box-shadow: 0 0 20px violet;
     border-color: violet;
     transform: translateY(-10px);
 }
-
 .email {
+    display: flex;
     padding: 20px;
     background: transparent;
     outline: none;
     word-spacing: 150px;
-    color: aliceblue;
 }
-
 .email input {
     width: 370px;
     height: 40px;
@@ -96,14 +96,12 @@ form .name {
     color: black;
     outline: none;
 }
-
 .email input:valid,
 .email input:focus {
     box-shadow: 0 0 20px violet;
     border-color: violet;
     transform: translateY(-10px);
 }
-
 .button button {
     color: black;
     cursor: pointer;
@@ -118,22 +116,19 @@ form .name {
     background-color: rgba(137, 43, 226, 0.502);
     letter-spacing: 2px;
 }
-
 .button button:hover {
     box-shadow: 0px 0px 25px black;
 }
-
 .fp {
     display: flex;
     font-size: 20px;
     justify-content: space-between;
 }
-
 .fp a {
     display: flex;
     position: relative;
     left: 50px;
-    color: olivedrab;
+    color: rgb(255, 0, 0);
     font-size: 25px;
     font-weight: 900;
 }
