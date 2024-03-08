@@ -4,7 +4,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
-background-color: rgb(118, 113, 107);
+background: linear-gradient(blueviolet,violet)
 }
 
 .logo img{
