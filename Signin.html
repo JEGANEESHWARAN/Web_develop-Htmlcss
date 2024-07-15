@@ -20,7 +20,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            box-shadow: 0 0 10px black; 
+            box-shadow: 0 0 10px black;
         }
         .home-img img {
             height: 50%;
@@ -32,35 +32,53 @@
             width: 100%;
             height: 100%;
             flex-wrap: nowrap;
-            
-            /* background: linear-gradient(purple,gray); */
-          background-color: #f0f0f0;
+          background-color: #fff;
         }
+        section .imgBx{
+           display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-grow: 2;
+            flex-wrap: nowrap;
+            height: 100%;
+               background: linear-gradient(purple,gray);
+               height: 550px;
+        }
+        section .imgBx img{
+            position: relative;
+            border-radius: 50px;
+            display: flex;
+            margin-top: 5%;
+            margin-bottom: 2%;
+            top: 0;
+            left: 0;
+            width: 92%;
+            height: 100%;
+            object-fit: fill;
+            }
             section .contentBx {
                 display: flex;
-              margin-top: 2%;
+                align-items: center;
                 justify-content: center;
                 width: 100%;
-                height: 700px;
+                height: 550px;
                 /* background-color: #ffffff; */
                 
             }
             section .contentBx .formBx{
-                width: 50%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 80%;
-                border: 1px solid;
-                background-color: azure;
-                box-shadow: 0 0 1cap;
+                height: 100%;
                 
             }
             section .contentBx .formBx h2{
                 color: #607d8b;
                 font-weight: 600;
                 font-size: 1.5em;
-                
                 text-transform: uppercase;
                 margin-bottom: 20px;
                 border-bottom: 4px solid #ff4584;
@@ -102,12 +120,10 @@
             section .contentBx .formBx .inputBx  input[type="submit"]:hover{
                 background:#f53677 ;
             }
-            section .contentBx .formBx .remember a{
+            section .contentBx .formBx .remember{
                 margin-bottom: 10px;
                 color: #607d8b;
                 font-size: 400;
-                text-decoration: none;
-                
                 font-size: 16px;
             }
             section .contentBx .formBx p{
@@ -117,29 +133,60 @@
                 color: #ff4584;
             }
             @media(max-width:900px){
+                .head .home-img img{
+                    display: none;
+                }
+                section .imgBx{
+                    position: absolute;
+                    top: 0;
+                    left:0;
+                    width: 100%;
+                    height: 700px;
+                    
+                }
+                section .imgBx img{
+                    width: 100%;
+                    margin-top: 4%;
+                    height: 100%;
+                    border-radius: 0;
+                }
                 section .contentBx{
                     width: 90%;
                     display: flex;
                     height: 600px;
-                    justify-content: center;
                     z-index: 1;
                     margin: 5%;
-                    background-color: #eeeeee;
+                    background-color: #fff;
                     border-radius: 10px;
                 }
                 
                 section .contentBx .formBx{
-                    width: 70%;
+                    width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     padding: 4px;
+                    /* background: rgb(255, 255, 255/0.9); */
                     margin: 5px;
-                    background-color: #ffffff;
+                    
                 }
             }
             
             @media(max-width:500px){
+                .head .home-img img{
+                    display: none;
+                }
+                section .imgBx{
+                    position: absolute;
+                    top: 0;
+                    left:0;
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+                section .imgBx img{
+                    border-radius: 0;
+                }
                 section .contentBx{
                     width: 100%;
                     height: 100%;
@@ -190,17 +237,21 @@
 </head>
 <body>
     <div class="head">
-    <div class="home-img">
-        <img src="./images/logoo.png" alt=" pls Wait ...">
-    </div>
-    <div class="hi">
-        <h3>Online Assessment</h3>
-    </div></div>.
+        <div class="home-img">
+            <img src="./images/logoo.png" alt=" pls Wait ...">
+        </div>
+        <div class="hi">
+            <h3>Online Assessment</h3>
+        </div></div>.
     <section>
+        
+        <div class="imgBx">
+            <img src="./images/ppp.avif" alt="">
+        </div>
         <div class="contentBx">
             <div class="formBx">
                 <form action="">
-                    <h2>Login</h2>
+                    <h2>Sign in</h2>
                     <div class="inputBx">
                         <span>Username</span>
                         <input type="text">
@@ -210,10 +261,10 @@
                         <input type="password">
                     </div>
                     <div class="remember">
-                        <a href=""><label for="">@forget password</label></a>
-                    </div><br>
+                        <label for=""><input type="checkbox">Remember me</label>
+                    </div>
                     <div class="inputBx">
-                        <input type="submit" value="Login">
+                        <input type="submit" value="Sign in">
                     </div><div class="inputBx">
                         <p>Don't have an account? <a href="">Sign up</a></p>
                     </div>
